@@ -1,0 +1,14 @@
+{
+    "name": "tongyh/subpackage-composer",
+    "authors": [
+        {
+            "name": "tongyh",
+            "email": "18572821456@163.com"
+        }
+    ],
+    "require": {
+    	"tufanbarisyildirim/php-apk-parser":"^2.0",
+    	"chumper/zipper": "^1.0",
+        "rodneyrehm/plist": "^2.0"
+    }
+}
