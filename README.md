@@ -6,16 +6,24 @@
 3. 项目主要是用来分渠道包，统计不同渠道子渠道的登录，充值情况.
 
 #### 软件架构
->app-package 测试包文件夹
->>mscqios_6026_1074.ipa ipa包
->>testms2and_6033_1077_1078.apk apk包  
+```
+php-subpackage #项目名称
+	app-package #包存放目录
+		mscqios_6026_1074.ipa
+		testms2and_6033_1077_1078.apk
+	picture
+		dir-tmplate.png
+	test
+		testApkparse.php #获取apk信息测试文件
+		testIpaparse.php #获取ipa信息测试文件
+	.gitignore
+	composer.json
+	composer.lock
+	LICENSE
+	README.md
+	sub.php  #入口文件
 
->pictrue 图片示例  
->test
->>testApkparse.php apk解析示例
->>testIpaparse.php ipa解析示例  
-
->sub.php    入口文件
+```
 
 #### 安装教程
 
