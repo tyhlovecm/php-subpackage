@@ -4,6 +4,9 @@ define('DOWNLOAD_DIR', '/www/download/sdkgame/');//包存放目录
 define('SUBPACKAGE_DIR', __DIR__.DIRECTORY_SEPARATOR."/subPackage");//需要用到的类
 define('PLIST_TMP_PATH', '/tmp/tmp_dir');//info.plist临时产生目录
 
+//自动加载
+require SUBPACKAGE_DIR."/vendor/autoload.php";
+
 //接受参数
 $params = json_decode(file_get_contents('php://input'), true);
 //返回响应
@@ -166,20 +169,19 @@ function del_file($files)
 
 //获取apk包版本信息
 function getApkinfo($file){
-	require SUBPACKAGE_DIR."/ApkParser.php";
-	$appObj = new Apkparser(); 
-	$appObj->open($file);
-	$gameinfo['appname'] = $appObj->getAppName();
-	$gameinfo['pakagename'] = $appObj->getPackage();
-	$gameinfo['vername'] = $appObj->getVersionName();
-	$gameinfo['verid'] = $appObj->getVersionCode();
+	$apk = new \ApkParser\Parser($file);
+	$manifest = $apk->getManifest();
+	//获取appname 方法可以自己实现
+	// $gameinfo['appname'] = $manifest->getAppName();
+	$gameinfo['pakagename'] = $manifest->getPackageName();
+	$gameinfo['vername'] = $manifest->getVersionName();
+	$gameinfo['verid'] = $manifest->getVersionCode();
 	$gameinfo['size'] = filesize($file);
 	return $gameinfo;
 }
 
 //获取ipa包信息
 function getIpainfo($targetFile){
-	require SUBPACKAGE_DIR."/vendor/autoload.php";
 	//临时目录存放info.plist
 	$storage_path = PLIST_TMP_PATH;
 

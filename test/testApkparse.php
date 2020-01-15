@@ -15,5 +15,7 @@ $version_name = $manifest->getVersionName();
 // 版本编号
 $version_code = $manifest->getVersionCode();
 
+$size = filesize($targetFile);
+
 // 其他方法参考官方文档
-var_dump($package_name, $version_name, $version_code);
+var_dump($package_name, $version_name, $version_code,$size);
