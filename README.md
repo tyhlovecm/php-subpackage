@@ -11,7 +11,8 @@
 
 #### 安装教程
 
-下载zip文件，解压即可使用. 
+1. ```git git clone git@github.com:tyhlovecm/subpackage-composer.git```
+2. ```composer composer install```
 
 #### 使用说明
 
