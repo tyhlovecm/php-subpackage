@@ -22,7 +22,6 @@ php-subpackage #项目名称
 	LICENSE
 	README.md
 	sub.php  #入口文件
-
 ```
 
 #### 安装教程
