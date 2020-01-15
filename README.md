@@ -15,7 +15,7 @@
 ```git 
 clone git@github.com:tyhlovecm/php-subpackage.git
 ```
-2. 进入subpackage-composer文件夹 安装项目所依赖的扩展包
+2. 进入php-subpackage文件夹 安装项目所依赖的扩展包
 ```composer
 composer install
 ```
