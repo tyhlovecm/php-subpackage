@@ -11,11 +11,11 @@
 
 #### 安装教程
 
-1. 
+1. 从github克隆代码到本地
 ```git 
 clone git@github.com:tyhlovecm/subpackage-composer.git
 ```
-2. 
+2. 进入subpackage-composer文件夹 安装项目所依赖的扩展包
 ```composer
 composer install
 ```
