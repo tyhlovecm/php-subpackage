@@ -46,11 +46,13 @@ composer install
 
 ### 关键代码
 ```php
+<?php
 header('Content-type: application/json;charset=utf-8");');
 define('DOWNLOAD_DIR', '/www/download/sdkgame/');//包存放目录
 define('SUBPACKAGE_DIR', __DIR__.DIRECTORY_SEPARATOR."/subPackage");//需要用到的类
 define('PLIST_TMP_PATH', '/tmp/tmp_dir');//info.plist临时产生目录
-
+//自动加载
+require SUBPACKAGE_DIR."/vendor/autoload.php";
 //接受参数
 $params = json_decode(file_get_contents('php://input'), true);
 //返回响应
