@@ -1,26 +1,13 @@
 {
-    "name": "tongyh/subpackage-composer",
-    "description": "subpackage，and read apk ，ipa Package information.",  
-    "keywords": [  
-        "php",
-        "subpackage"
-    ],
-    "authors": [
-        {
-            "name": "tongyh",
-            "email": "18572821456@163.com"
-        }
-    ],
     "require": {
         "tufanbarisyildirim/php-apk-parser":"^2.0",
         "chumper/zipper": "^1.0",
         "rodneyrehm/plist": "^2.0"
     },
-    "license": "MIT",
-    // "repositories": {
-    //     "packagist": {
-    //         "type": "composer",
-    //         "url": "https://mirrors.aliyun.com/composer/"
-    //     }
-    // }
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    }
 }
