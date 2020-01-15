@@ -11,8 +11,14 @@
 
 #### 安装教程
 
-1. ```git clone git@github.com:tyhlovecm/subpackage-composer.git```
-2. ```composer install```
+1. 
+```git 
+clone git@github.com:tyhlovecm/subpackage-composer.git
+```
+2. 
+```composer
+composer install
+```
 
 #### 使用说明
 
