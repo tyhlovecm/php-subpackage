@@ -1,8 +1,9 @@
 <?php
 // 识别APK信息
-require "../vendor/autoload.php";
+require __DIR__."/../vendor/autoload.php";
 
-$apk = new \ApkParser\Parser($this->targetFile);
+$targetFile = __DIR__.'/../app-package/testms2and_6033_1077_1078.apk';
+$apk = new \ApkParser\Parser($targetFile);
 $manifest = $apk->getManifest();
 
 // 包名
