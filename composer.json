@@ -1,7 +1,7 @@
 {
     "name": "tongyh/subpackage-composer",
-    "description": "subpackage，and read apk ，ipa Package information.",  // 关于这个包的描述
-    "keywords": [   // 关于这个包的关键字
+    "description": "subpackage，and read apk ，ipa Package information.",  
+    "keywords": [  
         "php",
         "subpackage"
     ],
