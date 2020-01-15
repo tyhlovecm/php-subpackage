@@ -1,5 +1,10 @@
 {
-    "name": "tongyh/php-subpackage",
+    "name": "tongyh/subpackage-composer",
+    "description": "subpackage，and read apk ，ipa Package information.",  // 关于这个包的描述
+    "keywords": [   // 关于这个包的关键字
+        "php",
+        "subpackage"
+    ],
     "authors": [
         {
             "name": "tongyh",
@@ -7,8 +12,15 @@
         }
     ],
     "require": {
-    	"tufanbarisyildirim/php-apk-parser":"^2.0",
-    	"chumper/zipper": "^1.0",
+        "tufanbarisyildirim/php-apk-parser":"^2.0",
+        "chumper/zipper": "^1.0",
         "rodneyrehm/plist": "^2.0"
-    }
+    },
+    "license": "MIT",
+    // "repositories": {
+    //     "packagist": {
+    //         "type": "composer",
+    //         "url": "https://mirrors.aliyun.com/composer/"
+    //     }
+    // }
 }
